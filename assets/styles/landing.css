@@ -1,0 +1,245 @@
+@import 'base.css';
+
+/*------------------------------------------
+Header Navigation Styling
+-------------------------------------------*/
+
+header {
+  min-width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  align-self: flex-start;
+}
+
+nav {
+  text-align: right;
+  width: 100%;
+  height: 56px;
+  font-size: 100%;
+  overflow: hidden;
+}
+
+nav ul {
+  float: none;
+  list-style: none;
+  font-size: 0;
+  margin-right: 100px;
+}
+
+@media all and (max-width: 484px) {
+  nav ul {
+    margin-right: 0;
+  }
+
+  nav {
+    text-align: center;
+  }
+}
+
+nav ul li {
+  display: inline;
+  line-height: 56px;
+  cursor: default;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 0 20px;
+  background-color: transparent;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: .2px;
+  text-transform: none;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #bbb;
+}
+
+nav ul li+li {
+  margin-left: 0;
+}
+
+/*------------------------------------------
+Hero Banner Styling
+-------------------------------------------*/
+
+.hero-banner {
+  background: #000 url("../images/banner-back.jpg") center center / cover no-repeat;
+  text-align: center;
+  height: 100vh;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*------------------------------------------
+Hero Banner Center Content Styling
+-------------------------------------------*/
+
+.hero-container h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.hero-container h1,
+.hero-container p {
+  color: white;
+}
+
+.hero-banner hr {
+    width: 70px;
+    margin: 22px 0;
+    border-top: 3px solid papayawhip;
+}
+
+#projects-btn {
+    margin-top: 20px;
+    text-decoration: none;
+    width: 110px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #039be5;
+    font-weight: 600;
+    letter-spacing: .2;
+    cursor: pointer;
+    background-color: #039be5;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+#projects-btn:hover {
+    background-color: #038ed2;
+}
+
+/*------------------------------------------
+Links at Bottom of Hero Styling
+-------------------------------------------*/
+
+.hero-bottom {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+i {
+  font-size: 20px;
+}
+
+.bottom-hero-nav {
+  text-align: center;
+}
+
+.bottom-hero-nav ul {
+  margin-right: 0;
+}
+
+.hero-center-container p {
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+/*------------------------------------------
+Footer Styling
+-------------------------------------------*/
+
+.footer {
+  width: 100%;
+  height: 120px;
+  background-color: grey;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+li {
+  display: inline;
+}
+
+.footer a {
+  font-size: 20px;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer ul {
+  margin-right: 0;
+}
+
+.footer nav {
+  text-align: left;
+  width: auto;
+}
+
+/*------------------------------------------
+Article Styling
+-------------------------------------------*/
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 70%;
+  }
+}
+
+figure{
+  margin-top: 10px;
+  width: 100%;
+}
+
+img {
+  margin-top: 12px;
+  width: 100%;
+}
+
+p {
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.heading {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.date {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+.article-p {
+  margin-top: 30px;
+}
