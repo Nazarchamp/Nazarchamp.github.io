@@ -196,13 +196,15 @@ table {
     width: 25%;
  }
  
-.td-3, .td-4, .td-5, .td-6{
-    width: 16.25%;
+
+ .td-3, .td-4, .td-5, .td-6{
+    width: calc(62vw / 4 - 154px);
  }
 
  table tr .td-6 {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    padding-left: 0px;
  }
  
  table tr .td-1 input {
