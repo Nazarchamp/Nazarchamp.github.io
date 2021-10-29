@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  transition: all .2s ease-in-out;
+}
+
+*, body {
+  font-family: 'Nunito Sans', Lato, sans-serif;
+}
+
+body{
+  background-color: whitesmoke;
+}
+
+h1, h2, div, p, a, li {
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+  position: relative;
+  padding: 0 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.row-container{
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+}
