@@ -409,6 +409,10 @@ figure{
   .contact-container, footer, .container{
     max-width: 1000px;
   }
+  
+  .article-img-small{
+  margin-left: calc(500px - 15%);
+}
 }
 
 @media screen and (max-width: 900px) {
