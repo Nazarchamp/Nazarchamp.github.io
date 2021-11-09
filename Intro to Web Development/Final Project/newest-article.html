@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nazar Viznytsya | What is HTTPS</title>
+    <link rel="shortcut icon" href="assets/images/favicon.jpg?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/landing.css" media="all">
+    <link rel="preload" href="assets/Nunito_Sans/NunitoSans-Bold.ttf" as="font" type="font/ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Nazar Viznytsya</a></h1>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Newest Article</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-nav">
+            <p><i class="fas fa-bars" title="Menu"></i>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div>
+                <h2 class="heading">What is HTTPS?</h2>
+                <h3 class="date">October 29, 2021</h3>
+            </div>
+            <article>
+                <p class="article-p">
+                    So you’ve noticed the little lock at the top of your browser next to the URL and are wondering what
+                    that means, or alternatively, you noticed the triangle with an exclamation mark and are worried you
+                    might be the victim of a cybercrime. Either way this article is here to explain what a “secure” vs
+                    “insecure” website is according to your browser.
+                </p>
+                <p class="article-p">
+                    Every web page is a collection of multiple types of media, which is commonly called hypermedia. This
+                    media ranges from text to images to videos to JavaScript - a programming language that is used to
+                    make a website interactive as opposed to just static videos and text. In order for you to be able to
+                    view a website, you must request the media of the website from the server. The server will then send
+                    you back the media using Hypertext Transfer Protocol (HTTP). HTTP is also the means by which you
+                    communicate with the server, for example if you fill out a form on a website and click submit that
+                    form information will be sent to the server for processing through HTTP.
+                </p>
+                <div class="img-center-container">
+                    <figure>
+                        <img class="article-img" src="Assets/Images/HTTP-diagram.png">
+                    </figure>
+                </div>
+                <p class="article-p">
+                    The main issue with sending data over HTTP is that it is sent in plain text. This means that while
+                    the media is being sent over the vast arrays of wires and electromagnetic waves of the internet
+                    anyone who intercepts it can read it just like you. This can become problematic if you’re sending
+                    sensitive information in a form, like passwords and usernames. If you send a password using just
+                    HTTP, anyone who can handle it will now know your password. Considering that most people access the
+                    internet from a wireless access point, if you are sending a password through HTTP anyone connected
+                    to the same Wi-Fi as you would be able to read your password. Even if you don’t use wireless
+                    internet, your data is sent from your router to a handful of routers and finally to the server,
+                    which you don’t have a guarantee isn’t connected to the internet. Any one of these routers could
+                    intercept your password.
+                </p>
+                
+                <p class="article-p">
+                    The solution to our problem comes from adding encryption to HTTP. An encrypted version of HTTP is
+                    called Hypertext Transfer Protocol Secure (HTTPS). HTTPS uses the encryption protocol Transport
+                    Layer Security (TLS). When you use HTTPS every bit of communication with the server is encrypted.
+                    This means that only you and the server can read the message, if anyone else tries to read it, the
+                    message will look like gibberish. In order to create this encryption each server needs to have a
+                    special certificate which gets shared with you at the start that you use to encrypt your messages.
+                    Anyone can make one of these certificates; however, to have the padlock in the top of your browser
+                    window, this certificate must come from a certificate authority. A certificate authority is a
+                    company that provides certificates to websites only if they can verify they are who they say they
+                    are. Some advanced hackers can fake their URL so that they can put their fake website on a real URL
+                    like: “www.gmail.com”, but they won’t ever be able to replicate the certificate because they don’t
+                    actually own “www.gmail.com” so there will be a triangle in the top left corner.
+                </p>
+                <div class="img-center-container-small">
+                    <figure>
+                        <img class="article-img-small" src="Assets/Images/certificate.png">
+                    </figure>
+                </div>
+                <p class="article-p">If you see the little lock in the top right of your screen the website you're
+                    visiting has good security and you shouldn’t be worried about having your data sniffed, or the
+                    website being impersonated. However, still be vigilant for instance “www.faceboook.com” (With three
+                    Os) could have a valid certificate and pretend to be the real Facebook, so make sure you’re checking
+                    the URL as well. When it comes to seeing the little triangle in the top left corner is where it gets
+                    more blurry. You should never input sensitive data into any website that has the triangle
+                    displaying, but if you will only use the website to view information, and you don’t care that
+                    someone can track what you're viewing then go ahead. A good way to determine if it’s safe without
+                    HTTPS is if you would be willing to have a complete stranger stand over your shoulder as you use the
+                    website.
+                </p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://twitter.com/mayor_kid"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/nazarviznytsya/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </nav>
+        <p class="copyright">&copy; 2021 Nazar Viznytsya</p>
+    </footer>
+</body>
+
+</html>
