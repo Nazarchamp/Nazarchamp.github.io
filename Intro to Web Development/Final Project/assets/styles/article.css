@@ -19,8 +19,7 @@ Article Styling
 }
 
 img {
-  margin: 0 auto;
-  margin-top: 12px;
+  margin: 12px auto 0;
   width: 100%;
 }
 
@@ -56,9 +55,8 @@ figure{
 }
 
 .article-img-small{
-  margin: 0 auto;
   width: 30%;
-  margin-left: calc(40vw - 15%);
+  margin: 0 auto 0 calc(40vw - 15%);
 }
 
 /*-------------------------------

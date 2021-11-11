@@ -39,7 +39,6 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
     line-height: 10vw;
-    font-size: 52px;
     font-size: min(calc(34px + (52 - 34) * ((100vw - 360px) / (1260 - 360))),52px);
 }
 
@@ -80,7 +79,6 @@ div a{
 }
 
 .large-box h1 {
-    font-size: 100px;
     font-size: min(calc(34px + (100 - 34) * ((100vw - 360px) / (1260 - 360))),100px);
     font-weight: 800;
 }
@@ -97,7 +95,7 @@ div a{
 }
 
 .large-box.beige hr, .large-box.purple hr, .large-box.green hr{
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 h3 a{

@@ -27,8 +27,8 @@ iframe{
     font-weight: 400;
 }
 
-input[type="text"]:valid, input[type="email"]:valid{
-    background: #fff url("checkmark.png") no-repeat 96% center;
+input[type="text"]:valid:required, input[type="email"]:valid:required, textarea:valid{
+    background: #fff url("../images/checkmark.png") no-repeat 96% center;
     background-size: 12px 12px;
 }
 
@@ -65,7 +65,7 @@ input, textarea{
     font-size:16px;
     font-weight: 400;
     color: #000;
-    transition: background-color .25 ease-in-out;
+    transition: background-color .25s ease-in-out;
 }
 
 form input+input{
@@ -83,7 +83,7 @@ input[type="reset"], input[type="submit"]{
     background-color: #fff;
     border: 1px solid #0b3e26;
     font-weight: 600;
-    letter-spacing: .2;
+    letter-spacing: .2px;
     color:#0b3e26;
     cursor: pointer;
 }
@@ -124,7 +124,7 @@ Alternative Contact Styling
 }
 
 .contact-text-container p{
-    font-family: 'Nunito Sans Lighter', Lato, 'sans serif';
+    font-family: 'Nunito Sans Lighter', Lato, sans-serif;
 }
 
 /*-------------------------------
@@ -149,8 +149,8 @@ Media Queries
         margin: 20px auto;
     }
     .contact-container{
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
         padding: 20px 0;
         height:auto;
     }
