@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-@font-face {font-family: 'Nunito Sans Lighter'; src: url(../Nunito_Sans/NunitoSans-Regular.ttf)}
-@font-face {font-family: 'Nunito Sans'; src: url(../Nunito_Sans/NunitoSans-Bold.ttf)}
-@font-face {font-family: 'Heaviest Nunito Sans'; src: url(../Nunito_Sans/NunitoSans-ExtraBold.ttf)}
+@font-face {font-family: 'Nunito Sans Lighter'; src: url(../fonts/Nunito_Sans/NunitoSans-Regular.ttf)}
+@font-face {font-family: 'Nunito Sans'; src: url(../fonts/Nunito_Sans/NunitoSans-Bold.ttf)}
+@font-face {font-family: 'Heaviest Nunito Sans'; src: url(../fonts/Nunito_Sans/NunitoSans-ExtraBold.ttf)}
 * {
   margin: 0;
   border: 0;

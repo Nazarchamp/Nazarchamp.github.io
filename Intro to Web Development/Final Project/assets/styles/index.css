@@ -1,0 +1,143 @@
+@import 'base.css';
+@import 'navigation-styles.css';
+
+.line-container{
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+.large-box{
+    height: 100%;
+    width: 70vw;
+    padding: 40px;
+    background-color: #f8f7f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-box h3{
+    max-width: 800px;
+}
+
+.large-box h2{
+    text-align: center;
+    font-size: min(calc(18px + (24 - 18) * ((100vw - 360px) / (1260 - 360))),24px);
+}
+
+.right-line{
+    height: 100%;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-line h1{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    line-height: 10vw;
+    font-size: 52px;
+    font-size: min(calc(34px + (52 - 34) * ((100vw - 360px) / (1260 - 360))),52px);
+}
+
+.right-line:hover{
+    box-shadow: 0 14px 20px #888888;
+    z-index: 1;
+}
+
+.purple.right-line:hover{
+    box-shadow: 0 14px 20px #333;
+}
+
+.green.right-line:hover{
+    box-shadow: 0 14px 20px #333;
+}
+
+.green{
+    background-color: #0b3e26;
+    color: #FFF;
+}
+
+.beige{
+    background-color: #e2d1be;
+}
+
+.purple{
+    background-color: #cc88ff;
+}
+
+.smoke{
+    background-color: #f8f7f1;
+}
+
+div a{
+    height: 100%;
+    text-decoration: none;
+    color: #111;
+}
+
+.large-box h1 {
+    font-size: 100px;
+    font-size: min(calc(34px + (100 - 34) * ((100vw - 360px) / (1260 - 360))),100px);
+    font-weight: 800;
+}
+
+.large-box h1,
+.large-box p {
+    color: #111;
+}
+
+.large-box hr {
+    width: 70px;
+    margin: 22px 0;
+    border-top: 3px solid black;
+}
+
+.large-box.beige hr, .large-box.purple hr, .large-box.green hr{
+    margin-top: 0px;
+}
+
+h3 a{
+    text-decoration: underline;
+}
+
+h3 a:hover{
+    text-decoration: none;
+}
+
+.green hr{
+    border-top: 3px solid white;
+}
+
+.green a, .green h1{
+    color: white;
+}
+
+/*-----------------------------------
+Media Queries
+-------------------------------------*/
+@media screen and (max-width: 900px) {
+    .right-line{
+        flex-direction: row;
+        height: 10vh;
+        width: 100vw;
+    }
+    .large-box{
+        width:100vw;
+        min-height: calc(70vh - 100px);
+    }
+    .line-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .right-line h1{
+        writing-mode: horizontal-tb;
+        line-height: 10vh;
+    }
+    hr{
+        margin-top: 22px !important;
+    }
+}
