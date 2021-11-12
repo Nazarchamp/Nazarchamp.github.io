@@ -5,6 +5,10 @@
 Form Styling
 -------------------------------------------*/
 
+main{
+    padding:40px 0;
+}
+
 .form h2{
     font-size: 24px;
     font-weight: 600;
@@ -105,6 +109,13 @@ input[type="submit"]:hover{
     margin-top: 15px;
 }
 
+.heading {
+    text-align: center;
+    font-size: min(calc(34px + (34 - 24) * ((100vw - 280px) / (1260 - 280))),34px);
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
 /*--------------------------
 Alternative Contact Styling
 --------------------------*/
@@ -113,7 +124,6 @@ Alternative Contact Styling
     display: flex;
     flex-wrap: wrap;
     margin:0 auto;
-    height: calc(100vh - 220px);
     align-items: center;
     justify-content: space-between;
 }
@@ -144,6 +154,12 @@ Media Queries
 
 
 @media screen and (max-width: 972px){
+    .heading{
+        margin-bottom: 0;
+    }
+    main{
+        padding-bottom: 0;
+    }
     .form-container, .contact-container{
         width: 90%;
         margin: 20px auto;
