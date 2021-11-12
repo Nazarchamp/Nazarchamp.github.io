@@ -82,8 +82,9 @@ nav ul li a, .bottom-hero-nav ul li a {
 nav ul li a:hover{
     text-decoration: underline;
 }
-.bottom-hero-nav ul li a:hover{
+.bottom-hero-nav ul li a:hover, footer nav ul li a:hover{
     color: #bbb;
+    transition: none;
 }
 
 nav ul li+li, .bottom-hero-nav ul li+li{
