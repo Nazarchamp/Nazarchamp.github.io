@@ -1,0 +1,262 @@
+@import "base.css";
+@import "navigation.css";
+
+/*------------------------------------------
+Header Navigation Styling
+-------------------------------------------*/
+
+header h1{
+    width: 400px;
+    margin-left: 60px;
+    line-height: 60px;
+}
+
+h1 a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.mobile-nav p{
+    line-height: 60px;
+    margin-top: 0;
+}
+
+.mobile-nav {
+    margin-right: 20px;
+}
+
+.mobile-nav p i {
+    line-height: 60px;
+    font-size: 20px;
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+header {
+    min-width: 100%;
+    background-color: #2E2759;
+
+    display:flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: none;
+}
+
+nav, .bottom-hero-nav {
+    text-align: right;
+    height: 60px;
+    font-size: 100%;
+    overflow: hidden;
+    width: calc(70vw - 80px);
+}
+
+nav ul, .bottom-hero-nav ul {
+    float: none;
+    list-style: none;
+    font-size: 0;
+    margin-right: 60px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+
+nav ul li, .bottom-hero-nav ul li {
+    display: inline;
+    padding: 0 20px;
+    cursor: default;
+}
+
+nav ul li a, .bottom-hero-nav ul li a {
+    display: inline-block;
+    background-color: transparent;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .2px;
+    text-transform: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.bottom-hero-nav ul li a:hover, footer nav ul li a:hover{
+    color: #bbb;
+    transition: none;
+}
+
+nav ul li+li, .bottom-hero-nav ul li+li{
+    margin-left: 0;
+}
+
+i {
+    font-size: 20px;
+}
+
+.bottom-hero-nav {
+    text-align: center;
+    height: auto;
+}
+
+.bottom-hero-nav ul {
+    margin-right: 0;
+    padding: 0;
+}
+
+/*----------------------------------
+Footer
+----------------------------------*/
+footer {
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin:0 auto;
+}
+
+li {
+    display: inline;
+}
+
+footer a {
+    font-size: 20px;
+}
+
+footer p {
+    color: #FFF;
+}
+
+footer ul {
+    margin-right: 0;
+}
+
+footer nav {
+    text-align: left;
+    width: auto;
+    margin-left: -15px;
+}
+
+/*---------------------------------
+Bottom Right Buttons
+---------------------------------*/
+.changeable-text{
+    margin-bottom: 10px;
+}
+
+.changeable-text + .changeable-text{
+    margin-top: 10px;
+}
+
+#button-container i{
+    font-size: 40px;
+    background-color: #2E2759;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #222;
+}
+
+#button-container i+i{
+    margin-top: 10px;
+}
+
+#button-container i:hover{
+    background-color: white;
+    color: #222;
+    cursor: pointer;
+}
+
+#button-container{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*----------------------------------
+Media Queries
+----------------------------------*/
+@media screen and (min-width: 1024px) {
+    footer{
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .bottom-hero-nav{
+        width:calc(100vw - 80px);
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    header h1 {
+        margin-left: 20px;
+    }
+
+    footer nav{
+        display: block;
+        height: 60px;
+        margin-left: 0;
+    }
+    footer nav ul{
+        padding-bottom: 0;
+    }
+
+    footer nav ul li{
+        padding: 0;
+    }
+
+    footer nav ul li+li{
+        padding-left: 40px;
+    }
+    footer{
+        width: 90vw;
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    footer p{
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    header h1{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .mobile-nav{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+}
+
+@media all and (max-width: 484px) {
+    nav ul {
+        margin-right: 0;
+    }
+
+    nav {
+        text-align: center;
+    }
+}
