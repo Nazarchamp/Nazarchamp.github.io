@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*@font-face {font-family: 'Nunito Sans Lighter'; src: url(../fonts/Nunito_Sans/NunitoSans-Regular.ttf)}*/
+/*@font-face {font-family: 'Nunito Sans'; src: url(../fonts/Nunito_Sans/NunitoSans-Bold.ttf)}*/
+/*@font-face {font-family: 'Heaviest Nunito Sans'; src: url(../fonts/Nunito_Sans/NunitoSans-ExtraBold.ttf)}*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    transition: all .2s ease-in-out;
+}
+
+.dark-body{
+    background-color: #222;
+}
+
+b{
+    font-family: 'Heaviest Nunito Sans', Lato, sans-serif;
+}
+
+p{
+    font-family: 'Nunito Sans Lighter', Lato, sans-serif;
+}
+
+*, body {
+    font-family: 'Nunito Sans', Lato, sans-serif;
+    color: #FFF;
+}
+
+body{
+    background-color: #fff;
+}
+
+h1, h2, div, p, a, li {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main{
+    width: 80vw;
+    margin: 0 auto;
+    min-height: calc(100vh - 60px);
+    padding-top:20px;
+}
