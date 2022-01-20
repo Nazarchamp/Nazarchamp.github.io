@@ -1,0 +1,190 @@
+@import 'forms.css';
+
+.fourth-square{
+    width: 100%;
+    height: 100%;
+    /*box-shadow: 0 20px 48px 0 #222;*/
+    box-shadow:
+            3px 3px 4px 0 rgba(255, 255, 255, 0.3) inset,
+            -2px -2px 3px 0 rgba(0, 0, 0, .25) inset;
+}
+
+.fourth-square:hover{
+    cursor: pointer;
+}
+.fourth-square::after{
+    content: "C";
+    color:white;
+    font-size: 36px;
+    margin: 0 auto;
+}
+
+.calc-output{
+    text-align: right;
+}
+
+h1.calc-output{
+    font-size: 64px;
+    line-height: 64px;
+    margin-top: 10px;
+    margin-right: -4px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-square:active{
+    box-shadow: 0 20px 48px 0 #1c1c1c inset;
+}
+
+.equals::after{
+    content: "=";
+}
+
+.zero::after{
+    content: '0';
+}
+
+.one::after{
+    content: "1";
+}
+
+.two::after{
+    content: "2";
+}
+
+.three::after{
+    content: "3";
+}
+
+.four::after{
+    content: "4";
+}
+
+.five::after{
+    content: "5";
+}
+
+.six::after{
+    content: "6";
+}
+
+.seven::after{
+    content: "7";
+}
+
+.eight::after{
+    content: "8";
+}
+
+.nine::after{
+    content: "9";
+}
+
+.dot::after{
+    content: "·";
+}
+
+.plus::after{
+    content: "+";
+}
+
+.minus::after{
+    content: "-";
+}
+
+.multiply::after{
+    content: "×";
+}
+
+.divide::after{
+    content: "÷";
+}
+
+.all-clear::after{
+    content: "AC";
+}
+
+.clear::after{
+    content: "C";
+}
+
+.purple-text::after{
+    color: #2E2759;
+    font-weight: bold;
+}
+
+.calc-form{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.fake-form{
+    width: 24vw;
+    height: 18vw;
+}
+
+
+.dot{
+    margin-right: 10px;
+}
+
+.bot-calc-form{
+    margin-top:10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: calc(50% - 5px) auto auto;
+    grid-template-rows: auto;
+    height: 6vw;
+}
+
+.top-calc-form{
+    margin-bottom:10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: calc(75% - 3px) auto;
+    grid-template-rows: auto;
+    height: 6vw;
+}
+
+.grey-button{
+    color: black;
+}
+
+
+.white-button{
+    background-color: #505050;
+    color:white;
+}
+
+.purple-button{
+    background-color: #FF9500;
+}
+
+.calc-display{
+    width: 100%;
+    height: 12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.calc-display p{
+    direction: rtl;
+}
+
+.calc-display h1{
+    direction: rtl;
+    font-size: 64px;
+}
+
+body{
+    background-color: #1c1c1c;
+}
