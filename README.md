@@ -7,3 +7,4 @@
 - [Web Development Final Assignment](https://nazarchamp.github.io/Intro%20to%20Web%20Development/Final%20Project)
 ## Javascript Basics
 - [Javascript Basics Assignment 1](https://nazarchamp.github.io/Javascript%20Basics/Assignment%201/index.html)
+- [Javascript Basics Assignment 2](https://nazarchamp.github.io/Javascript%20Basics/Assignment%202/index.html)
