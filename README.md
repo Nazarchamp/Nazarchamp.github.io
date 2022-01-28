@@ -8,3 +8,4 @@
 ## Javascript Basics
 - [Javascript Basics Assignment 1](https://nazarchamp.github.io/Javascript%20Basics/Assignment%201/index.html)
 - [Javascript Basics Assignment 2](https://nazarchamp.github.io/Javascript%20Basics/Assignment%202/index.html)
+- [Javascript Basics Final Assignment](https://nazarchamp.github.io/Javascript%20Basics/Final%20Project/index.html)
