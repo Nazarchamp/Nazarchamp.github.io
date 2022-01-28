@@ -286,9 +286,13 @@ Alternative Contact Styling
     color: black;
 }
 
-#error-p{
+#error-p, #large-error-p{
     color: darkred!important;
     text-align: center;
+}
+
+#large-error-p{
+    margin-bottom: 10px;
 }
 
 .close-login{
