@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Intro To Javascript | Project 1</title>
+    <link href="assets/img/favicon.png?v=2" rel="shortcut icon" type="image/x-icon">
+    <link href="assets/styles/forms.css" media="all" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <script src="assets/scripts/theme-changer.js" defer></script>
+    <script src="assets/scripts/sign-up.js" defer></script>
+
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Search</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Search Area</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-nav">
+            <p><i class="fas fa-bars" title="Menu"></i>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <form class="sign-up-form">
+                    <h1 class="login-text">Sign Up</h1>
+                    <p class="login-text" id="error-p" style="display: none;">All Fields Required</p>
+                    <div class="form">
+                        <input class="login-form-input converter-input full-size-btn" type="text" id="first-name" placeholder="First Name *">
+                        <input class="login-form-input converter-input full-size-btn" type="text" id="last-name" placeholder="Last Name *">
+                        <input class="login-form-input converter-input full-size-btn" type="text" id="email" placeholder="Email *">
+
+                        <input class="login-form-input converter-input full-size-btn" type="password" id="password" placeholder="Password *">
+                        <input class="login-form-input converter-input full-size-btn" type="password" id="password-re" placeholder="Re-type Password *">
+
+                        <input class="login-form-input converter-input" type="reset" id="clear" name="clear" value="Clear">
+                        <input class="login-form-input converter-input" type="button" id="register" name="register" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="button-container">
+            <i class="far fa-sun" id="mode-change-btn"></i>
+        </div>
+    </main>
+</div>
+</body>
+</html>

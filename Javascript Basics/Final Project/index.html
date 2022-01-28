@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Intro To Javascript | Project 1</title>
+    <link href="assets/img/favicon.png?v=2" rel="shortcut icon" type="image/x-icon">
+    <link href="assets/styles/forms.css" media="all" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <script src="assets/scripts/search.js" defer></script>
+    <script src="assets/scripts/login.js" defer></script>
+    <script src="assets/scripts/theme-changer.js" defer></script>
+</head>
+<body>
+<div id="wrapper">
+    <div class="overlay" id="overlay">
+        <i class="close-login fas fa-times" id="close-login"></i>
+        <div class="modal">
+            <h1 class="login-text">Login</h1>
+            <p class="login-text" id="error-p" style="display: none;">All Fields Required</p>
+            <div class="form">
+                <input class="login-form-input converter-input full-size-btn" type="text" id="username" placeholder="Username *">
+                <input class="login-form-input converter-input full-size-btn" type="password" id="password" placeholder="Password *">
+                <input class="login-form-input converter-input full-size-btn" type="button" id="login" name="login" value="Login">
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>Search</h1>
+        <nav>
+            <ul>
+                <li><a id="loginAnchor">Login</a></li>
+                <li><a id="sign-up" href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-nav">
+            <p><i class="fas fa-bars" title="Menu"></i>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <h1 class="changeHeadings">Search</h1>
+                <div class="fake-form" onsubmit="submitText()">
+                    <input class="converter-input full-size-btn" id="query" name="num1" placeholder="Search"
+                           type="text">
+                    <div class="button-container">
+                        <input id="google-btn" type="button" value="Google">
+                        <input id="bing-btn" type="button" value="Bing">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="button-container">
+            <i class="far fa-sun" id="mode-change-btn"></i>
+        </div>
+    </main>
+</div>
+</body>
+</html>
