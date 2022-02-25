@@ -217,3 +217,18 @@ button{
     top: calc(50vh - 78px);
     display: none;
 }
+
+@media all and (max-width: 600px) {
+    #keyboard{
+        width: calc(100% - 10px);
+    }
+
+    .modal{
+        width: calc(100% - 20px);
+        left: 10px;
+    }
+
+    .close-login{
+        right: 30px;
+    }
+}
