@@ -231,7 +231,7 @@ button{
 
     #error-msg{
         position: fixed;
-        top: 60px;
+        top: 100px;
     }
 
     .close-login{

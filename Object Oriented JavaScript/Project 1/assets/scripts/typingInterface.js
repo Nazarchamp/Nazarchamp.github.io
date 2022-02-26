@@ -137,3 +137,19 @@ const updateRow = () => {
         tiles[i].innerHTML = "";
     }
 }
+
+document.addEventListener('keyup', (event) => {
+    if(canvasCover.style.display !== "none")
+        return;
+    console.log(event.key);
+    if ((event.keyCode >= 65 && event.keyCode <= 90) || (event.keyCode >= 97 && event.keyCode <= 122)) { // if a letter pressed
+        if(strToWrite.length < 5)
+        strToWrite += String.fromCharCode(event.keyCode).toUpperCase();
+        updateRow();
+    }
+    if(event.key === "Backspace")
+        strToWrite = strToWrite.slice(0, -1);
+        updateRow();
+    if(event.key === "Enter")
+        enterBtn.click();
+  });
