@@ -96,7 +96,7 @@ enterBtn.addEventListener('click', () =>{
             soundPlayer.play();
             displayErrorMsg(resultWords[curRowOn]);
             setTimeout(()=>{
-                announcement.innerHTML = "<b>🎉Congratulations!🎉</b>";
+                announcement.innerHTML = "<b>🎉Congratulations!🎉</b><br>You won in " + curRowOn + " guesses!";
                 winModal.style.display = "block";
                 canvasCover.style.display = "block";
             }, 2000);
