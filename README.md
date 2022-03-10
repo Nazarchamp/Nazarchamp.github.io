@@ -11,3 +11,4 @@
 - [Javascript Basics Final Assignment](https://nazarchamp.github.io/Javascript%20Basics/Final%20Project/index.html)
 ## Object Oriented JavaScript
 - [Object Oriented JavaScript Project 1](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/Project%201/index.html)
+- [Object Oriented JavaScript Review](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/OOP%20Review/index.html)
