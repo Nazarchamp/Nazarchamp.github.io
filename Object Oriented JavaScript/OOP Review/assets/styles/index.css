@@ -1,0 +1,297 @@
+@import 'base.css';
+@import 'navigation.css';
+
+@keyframes trans {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/*-------------------------------------------
+Form Styling
+-------------------------------------------*/
+
+
+.dark-mode-text{
+    color: #FFF !important;
+}
+
+.form-container h2{
+    color: #000;
+}
+
+main{
+    padding:40px 0;
+}
+
+.fake-form h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+iframe{
+    margin-top:10px;
+    flex-grow: 1;
+}
+
+.fake-form p{
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.left-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.fake-form{
+    font-size: 0;
+    width: 550px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+input, textarea, select{
+    width: calc(40% - 20px / 3);
+    height:50px;
+    padding: 0 15px;
+    background-color: #fff;
+    border: 1px solid #222;
+    border-radius: 4px;
+    font-size:16px;
+    font-weight: 400;
+    color: #000;
+    transition: background-color .25s ease-in-out;
+}
+
+select+select{
+    margin-left: 10px;
+}
+
+#shape-grid{
+    width: 550px;
+    height: 370px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 40px;
+    grid-template-columns: repeat(6, 80px);
+    grid-template-rows: repeat(4, 80px);
+    padding: 10px;
+    transform: rotateX(180deg);
+}
+
+#contact-grid{
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(80px, 1fr));
+}
+
+.output{
+    width: 100%;
+    padding: 15px;
+    background-color: #EEE;
+    border-radius: 4px;
+    font-size:16px;
+    margin-top:10px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shape{
+    width: 80px;
+    height: 80px;
+    animation: trans .3s linear;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.output p + p{
+    margin-top: 10px;
+}
+
+#error{
+    color: red;
+    visibility: hidden;
+}
+
+.output p, .output b{
+    color: #000;
+}
+
+.fake-form input+input{
+    margin-top: 15px;
+}
+
+input:focus, textarea:focus{
+    border: 1px solid #222;
+}
+
+input[type="button"]{
+    width:calc(20% - 20px / 3);
+    height:50px;
+    margin-left: 10px;
+    text-align:center;
+    border: 1px solid #222;
+    font-weight: 600;
+    letter-spacing: .2px;
+    color:#FFF;
+    cursor: pointer;
+    background-color: #2E2759;
+}
+
+option{
+    color: black;
+}
+
+.dark-input{
+    background-color: #222;
+    color: white;
+    border: 1px solid #FFF;
+}
+
+.dark-input option{
+    color: white;
+}
+
+
+
+.dark-input:focus{
+    border: 1px solid white;
+}
+
+::placeholder{
+    color: black;
+}
+
+.dark-div{
+    background-color: #444;
+}
+
+.dark-div p, .dark-div b{
+    color: white;
+}
+
+.dark-input::placeholder{
+    color: white;
+}
+
+input[type="button"]{
+    border: 1px solid #222;
+}
+
+
+input[type="button"]:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+.buttons{
+    text-align: left;
+    margin-top: 15px;
+}
+
+.heading {
+    text-align: center;
+    font-size: min(calc(34px + (34 - 24) * ((100vw - 280px) / (1260 - 280))),34px);
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+#shape-info{
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+
+}
+
+.shape:hover{
+    cursor: pointer;
+}
+
+/*--------------------------
+Alternative Contact Styling
+--------------------------*/
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-text-container{
+    margin: 15px 0;
+
+}
+
+.contact-text-container p{
+    font-family: 'Nunito Sans Lighter', Lato, sans-serif;
+}
+
+/*-------------------------------
+Media Queries
+-------------------------------*/
+@media screen and (min-width: 768px) {
+    .contact-container {
+        max-width: 800px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-container{
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 972px){
+    .form-container + .form-container{
+        margin-top: 40px;
+    }
+    .fake-form{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .heading{
+        margin-bottom: 0;
+    }
+    .container{
+        width: 80vw;
+    }
+    .form-container{
+        width: 100%;
+    }
+    main{
+        padding-bottom: 0;
+    }
+    .contact-container{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 20px 0;
+        height:auto;
+    }
+}
