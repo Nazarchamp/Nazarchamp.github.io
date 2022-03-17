@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>OOP JS | Final Assignment</title>
+    <link href="assets/img/favicon.png?v=2" rel="shortcut icon" type="image/x-icon">
+    <link href="assets/styles/forms.css" media="all" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <link href="assets/styles/forms.css" rel="stylesheet">
+    <script defer src="assets/scripts/users.js"></script>
+    <script defer src="assets/scripts/index.js"></script>
+    <script defer src="assets/scripts/fileuploader.js"></script>
+    <script defer src="assets/scripts/post.js"></script>
+</head>
+<body>
+<div class="overlay" id="overlay">
+    <div class="modal">
+        <div class="modal-profile-pic"></div>
+        <h1>Nazar Viznytsya</h1>
+        <p>Id: 20349</p>
+        <p>Email: viz.nazar@gmail.com</p>
+        <p>My pages: 3</p>
+        <p>My groups: 28</p>
+    </div>
+</div>
+<div id="wrapper">
+    <header>
+        <h1><a href="#">Fakebook</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <div id="pic-container">
+            <div id="profile-pic"></div>
+
+        </div><!--<div class="mobile-nav">
+            <p><i class="fas fa-bars" title="Menu"></i>
+        </div>-->
+    </header>
+    <main>
+
+        <div class="container" id="post-container">
+            <div class="post" id="post-form">
+                <textarea id="post-textarea" placeholder="What's new, Nazar?"></textarea>
+                <div id="post-btn-container">
+                    <div id="file-upload-container">
+                        <label for="file-upload">
+                            <i class="fas fa-image"></i>
+                        </label>
+                        <p id="filename"></p>
+                    </div>
+                    <input accept="image/*" id="file-upload" type="file">
+
+                    <button id="post-btn">Post</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div>
+</body>
+</html>
