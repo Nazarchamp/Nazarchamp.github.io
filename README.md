@@ -12,3 +12,4 @@
 ## Object Oriented JavaScript
 - [Object Oriented JavaScript Project 1](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/Project%201/index.html)
 - [Object Oriented JavaScript Review](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/OOP%20Review/index.html)
+- [Object Oriented JavaScript Final Project](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/OOP%20JS%20Final%20Assignment/index.html)
