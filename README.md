@@ -13,3 +13,5 @@
 - [Object Oriented JavaScript Project 1](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/Project%201/index.html)
 - [Object Oriented JavaScript Review](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/OOP%20Review/index.html)
 - [Object Oriented JavaScript Final Project](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/OOP%20JS%20Final%20Assignment/index.html)
+## Introduction To Third Party APIs
+- [Introduction To Third Party APIs Exercise 2 - Improvement of Object Oriented JavaScript Project 1](https://Nazarchamp.github.io/Introduction%20to%20Third%20Party%20APIs/Exercise%202,%20OOP%20JS%20Project%201%20Update/index.html)
