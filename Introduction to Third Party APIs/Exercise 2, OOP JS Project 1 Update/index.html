@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>OOP JS | Wordl</title>
+    <link href="assets/img/favicon.png?v=2" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <script src="assets/scripts/wordlists.js"></script>
+    <script src="assets/scripts/wordleEngine.js"></script>
+    <script defer src="assets/scripts/typingInterface.js"></script>
+    <link href="assets/styles/index.css" rel="stylesheet">
+</head>
+
+<body>
+<audio id="music-player" src="assets/media/Background-Music.mp3"></audio>
+<audio id="sound-player" src="assets/media/win.wav" type="audio/wav"></audio>
+<div id="canvas-cover"></div>
+<div class="modal" id="win-modal">
+    <p id="announcement"><b>🎉Congratulations!🎉</b></p>
+    <p>Press the button below to start another <b>WORDL</b></p>
+    <button id="play-again">Play Again</button>
+</div>
+
+<div class="modal" id="high-score-modal">
+    <p class="announcement-p"><b>📈High Scores📈</b></p>
+    <hr>
+    <div id="scores-table">
+        <div class="top-table table-row">
+            <div class="third">Word</div>
+            <div class="third">Guesses</div>
+            <div class="third">Date</div>
+        </div>
+        <div id="games-container">
+            <div class="table-row">
+                <div class="third">Flaunt</div>
+                <div class="third">3</div>
+                <div class="third">Apr. 8</div>
+            </div>
+
+            <div class="table-row">
+                <div class="third">Guess</div>
+                <div class="third">4</div>
+                <div class="third">Apr. 8</div>
+            </div>
+
+            <div class="table-row">
+                <div class="third">Tonic</div>
+                <div class="third">6</div>
+                <div class="third">Apr. 10</div>
+            </div>
+            <div class="table-row">
+                <div class="third">Tonic</div>
+                <div class="third">6</div>
+                <div class="third">Apr. 10</div>
+            </div>
+            <div class="table-row">
+                <div class="third">Tonic</div>
+                <div class="third">6</div>
+                <div class="third">Apr. 10</div>
+            </div>
+            <div class="table-row">
+                <div class="third">Tonic</div>
+                <div class="third">6</div>
+                <div class="third">Apr. 10</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="help-modal">
+    <i class="close-login fas fa-times" id="close-help"></i>
+    <p>Guess the <b>WORDL</b> in 6 tries</p>
+    <p>Each guess must be a valid five letter word in the CSW word list</p>
+    <p>After each guess the colours of the tiles will change to give more information about the hidden word</p>
+    <hr>
+    <p><b>Examples</b></p>
+    <div class="example-row">
+        <div class="tile Green">T</div>
+        <div class="tile">R</div>
+        <div class="tile">A</div>
+        <div class="tile">I</div>
+        <div class="tile">N</div>
+    </div>
+    <p>The letter <b>T</b> is in the word and in the correct spot.</p>
+    <div class="example-row">
+        <div class="tile">S</div>
+        <div class="tile">H</div>
+        <div class="tile Yellow">I</div>
+        <div class="tile">L</div>
+        <div class="tile">L</div>
+    </div>
+    <p>The letter <b>I</b> is in the word but in a different spot.</p>
+    <div class="example-row">
+        <div class="tile">M</div>
+        <div class="tile">U</div>
+        <div class="tile">L</div>
+        <div class="tile Grey">C</div>
+        <div class="tile">H</div>
+    </div>
+    <p>The letter <b>C</b> is not in the word in any spot.</p>
+</div>
+<header>
+    <h1>WORDL</h1>
+</header>
+<main>
+
+    <div id="error-msg">Not Enough Letters!</div>
+    <div id="board">
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+    </div>
+
+    <div id="keyboard">
+        <div class="keyboard-row">
+            <div class="keyboard-button">Q</div>
+            <div class="keyboard-button">W</div>
+            <div class="keyboard-button">E</div>
+            <div class="keyboard-button">R</div>
+            <div class="keyboard-button">T</div>
+            <div class="keyboard-button">Y</div>
+            <div class="keyboard-button">U</div>
+            <div class="keyboard-button">I</div>
+            <div class="keyboard-button">O</div>
+            <div class="keyboard-button">P</div>
+        </div>
+        <div class="keyboard-row">
+            <div class="keyboard-button">A</div>
+            <div class="keyboard-button">S</div>
+            <div class="keyboard-button">D</div>
+            <div class="keyboard-button">F</div>
+            <div class="keyboard-button">G</div>
+            <div class="keyboard-button">H</div>
+            <div class="keyboard-button">J</div>
+            <div class="keyboard-button">K</div>
+            <div class="keyboard-button">L</div>
+        </div>
+        <div class="keyboard-row">
+            <div class="large-btn" id="enter-btn">Enter</div>
+            <div class="keyboard-button">Z</div>
+            <div class="keyboard-button">X</div>
+            <div class="keyboard-button">C</div>
+            <div class="keyboard-button">V</div>
+            <div class="keyboard-button">B</div>
+            <div class="keyboard-button">N</div>
+            <div class="keyboard-button">M</div>
+            <div class="large-btn" id="back-btn">Back</div>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>
