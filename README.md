@@ -1,4 +1,7 @@
 # My Projects
+## ✨ My top Picks
+- [Javascript Basics Assignment 2](https://nazarchamp.github.io/Javascript%20Basics/Assignment%202/index.html)
+- [Introduction To Third Party APIs Exercise 2 - Improvement of Object Oriented JavaScript Project 1]
 ## Into to Web Development
 - [Web Development Assignment 3](https://nazarchamp.github.io/Intro%20to%20Web%20Development/Assignment%203)
 - [Web Development Assignment 4](https://nazarchamp.github.io/Intro%20to%20Web%20Development/Assignment%204)
