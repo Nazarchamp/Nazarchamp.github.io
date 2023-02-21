@@ -1,4 +1,4 @@
-A repository containing all my technical projects from the Front-End development portion of the MITT software development diploma. I have excluded non web based assignments like PDF reports, and command line assignments.
+A repository containing all my technical projects from the vanilla HTML, CSS, JS development portion of the MITT software development diploma. I have excluded non web based assignments like PDF reports, and command line assignments.
 ## ✨ My Top Picks
 - [Web Development Assignment 6](https://nazarchamp.github.io/Intro%20to%20Web%20Development/Assignment%206)
 - [Javascript Basics Assignment 2](https://nazarchamp.github.io/Javascript%20Basics/Assignment%202/index.html)
