@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>OOP JS | Exercise 2</title>
+    <link href="assets/img/favicon.png?v=2" rel="shortcut icon" type="image/x-icon">
+    <link href="assets/styles/forms.css" media="all" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/forms.css">
+    <script src="assets/scripts/changecolor.js" defer></script>
+    <script src="assets/scripts/datechecker.js" defer></script>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1><a href="#">Exercise 2</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-nav">
+            <p><i class="fas fa-bars" title="Menu"></i>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <h2 class="changeHeadings">Your Day</h2>
+                <div class="fake-form" onsubmit="submitText()">
+                    <input id = "date" class="converter-input full-size-btn" name="date" placeholder="yyyy-mm-dd" type="text">
+                    <input id = "calc-btn" class="full-size-btn" type="button" value="Calculate">
+                    <div class="output" id="output-container"><p id="calc-output" >Result:</p></div>
+                </div>
+            </div>
+        </div>
+        <div id="button-container">
+            <i class="far fa-sun" id="mode-change-btn"></i>
+        </div>
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Nazar Viznytsya | OOP Principles</title>
+    <link href="assets/images/favicon.jpg?v=2" rel="shortcut icon" type="image/x-icon">
+    <link href="assets/styles/article.css" media="all" rel="stylesheet">
+    <link as="font" href="assets/fonts/Nunito_Sans/NunitoSans-Bold.ttf" rel="preload" type="font/ttf">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+<header>
+    <a href="index.html"><img src="assets/images/Logo.png"></a>
+    <nav>
+        <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav">
+        <p><i class="fas fa-bars" title="Menu"></i>
+    </div>
+</header>
+<main>
+    <div class="hero-banner hero-ferris">
+
+    </div>
+    <div class="main-article">
+        <div class="side-links">
+            <nav>
+                <ul>
+                    <li><p>Socials</p></li>
+                    <li><a href="https://twitter.com/mayor_kid" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/nazarviznytsya/" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/Nazarchamp" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div>
+                <h2 class="heading">Object Oriented Programming Principles</h2>
+            </div>
+            <article>
+                <p class="article-p">Object Oriented Programming (OOP) is one of if not the most used programming
+                    paradigm in the world. Languages that implement OOP are some of the most used in the world and other
+                    commonly used programming languages that started out as only functional have developed OOP
+                    principles.
+                    In this blog post we'll go over important concepts of Object Oriented Programming.
+                </p>
+                <h2>Classes</h2>
+                <p class="article-p">
+                    A class is a template of an object. It defines the initial values of the properties within the
+                    class, and it also defines the behaviour of its objects (Methods). Classes can also exist in a
+                    static sense where they are not tied to any given object, and exist from when it's constructed
+                    (Typically the start of the program), to the end of the program.
+                </p>
+
+                <h2>Objects</h2>
+                <p class="article-p">
+                    An object is an instantiated version of a class. It is some amount of memory that has been allocated
+                    in the way set out in the class. There can be several objects of the same class within a program and
+                    each of these is called an instance of the parent class. Think of a class as a car, and objects can
+                    be Ford F150, Honda Civic, Toyota Prius. They're all different cars, but they still all have the
+                    same basic car properties like an engine and four wheels.
+                </p>
+
+                <h2>Constructors</h2>
+                <p class="article-p">
+                    Constructors are special types of methods which are used to create instances of classes. These
+                    constructors have the same name as the class which they are instantiating and can prepare the object
+                    by defining initial values. Note that static classes cannot have a constructor since they cannot be
+                    instantiated.
+                </p>
+
+                <h2>Accessor Methods</h2>
+                <p class="article-p">
+                    Accessor methods typically come in two main types: getters and setters. These are special types of
+                    methods that typically are bound to properties within an
+                    object. A getter method is the method which is called when a property inside a class is read,
+                    typically it returns just the property, although it can format properties to meet a specific
+                    standard. A setter is the method which is used to set a property, setters can have input
+                    validation/parsing, and can also be configured to set the values of several variables. A property
+                    that doesn't have a getter means it cannot be read, and a property that doesn't have a setter means
+                    it can't be set.
+                </p>
+
+                <h2>Interfaces</h2>
+                <p class="article-p">
+                    Interfaces define the input and output of the objects in terms of their methods. These methods
+                    include accessor methods that are accessible outside the class. However, interfaces do not
+                    define the behaviour of an object, they only define what methods an object has, not what the
+                    methods do. An object can have several interfaces. Think of interfaces as the buttons and ports
+                    on your computer, it has a power button, but you don't know what the power button will do, but
+                    you know that your computer can't bake cookies because it doesn't have a compartment to put them
+                    in.
+                </p>
+
+                <h2>Abstraction</h2>
+                <p class="article-p">
+                    Abstraction is the principle that you only provide the information that is relevant to the user, and
+                    that you "hide" all information that is not relevant to them. For instance, if you are searching up
+                    cookie recipes on the internet, you do not care about the routers which your HTTP packets visit, or
+                    the DNS server you used to resolve the URL.
+                </p>
+
+                <h2>Encapsulation</h2>
+                <p class="article-p">
+                    Encapsulation is the first pillar of Object Oriented Programming, it states that classes and objects
+                    should be able to control which properties and methods are accessible outside the class and in
+                    what manner they are accessible. We accomplish this by setting properties and methods to public or
+                    private(Or special mixes of the two in some languages). This
+                    limits the potential for coding errors, creates simpler interaction with classes, and limits the
+                    attack surface providing a bit more cybersecurity.
+                </p>
+
+                <h2>Inheritance</h2>
+                <p class="article-p">
+                    Inheritance is another pillar of Object Oriented Programming. It is the ability for a class to be
+                    able to inherit properties and methods of other
+                    classes. This happens by deriving a class from another class if <b>Class B</b> is derived from
+                    <b>Class A</b>, then <b>Class B</b> has all of <b>Class A</b>'s public and private properties and
+                    methods. Note that <b>Class A</b> will not have <b>Class B</b>'s properties or methods.
+                </p>
+
+                <h2>Polymorphism</h2>
+                <p class="article-p">
+                    Polymorphism is the final pillar of Object Oriented Programming. It is the ability for a class to
+                    take on several unique versions. Classes can implement
+                    virtual methods that derived classes will override. For instance take the example of a class <b>Animal</b>,
+                    with derived classes <b>Dog</b>, <b>Cat</b>, <b>Bird</b>. The Animal class can have the virtual
+                    method <b>Speak()</b> and
+                    each of the animals would override it with the sound that they make.
+                </p>
+
+                <h2>Design Patterns</h2>
+                <p class="article-p">
+                    A design pattern is a reusable solution to a problem that commonly occurs. The most common and first
+                    taught design principle is: Don't Repeat Yourself (DRY). DRY is simply if you're writing the same code
+                    several times create a method to do it in less lines. This also applies to changing hard coded
+                    values to variables. Object Oriented Programming has some specific design principles too. There are
+                    lots of them, but a well known one is the Open Closed Principle. This principle states that classes
+                    should be open for extension and closed for modification. For example if you have a class
+                    <b>Shape</b> and it has a method <b>GetArea()</b> that only calculates area the way rectangles do it (Length x Width) then to make a
+                    triangle you would need to modify the <b>GetArea()</b> method. It would be Open Closed Principle if shape had a virtual method
+                    of <b>GetArea()</b>, and derived classes existed for different shapes.
+                </p>
+
+
+            </article>
+        </div>
+    </div>
+</main>
+<footer>
+    <p class="copyright">&copy; 2021 Nazar Viznytsya</p>
+</footer>
+</body>
+
+</html>
