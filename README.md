@@ -15,9 +15,9 @@ A repository containing all my technical projects from the vanilla HTML, CSS, JS
 - [Javascript Basics Assignment 2](https://nazarchamp.github.io/Javascript%20Basics/Assignment%202/index.html)
 - [Javascript Basics Final Assignment](https://nazarchamp.github.io/Javascript%20Basics/Final%20Project/index.html)
 ## Object Oriented JavaScript
-- [Object Oriented JavaScript Exercise 2](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/Exercise%202/index.html)
-- [Object Oriented JavaScript Assignment 1](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/Assignment%201/index.html)
-- [Object Oriented JavaScript Assignment 2](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/Assignment%202/index.html)
+- [Object Oriented JavaScript Exercise 2](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/OOP%20JS%20Exercise%202/index.html)
+- [Object Oriented JavaScript Assignment 1](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/OOP%20JS%20Assignment%201/index.html)
+- [Object Oriented JavaScript Assignment 2](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/OOP%20JS%20Assignment%202/index.html)
 - [Object Oriented JavaScript Project 1](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/Project%201/index.html)
 - [Object Oriented JavaScript Review](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/OOP%20Review/index.html)
 - [Object Oriented JavaScript Final Project](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/OOP%20JS%20Final%20Assignment/index.html)
