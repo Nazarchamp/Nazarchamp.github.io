@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Ticket Finder</title>
+    <link href="assets/images/favicon.jpg?v=2" rel="shortcut icon" type="image/x-icon">
+    <link href="assets/styles/index.css" media="all" rel="stylesheet">
+    <link href="assets/styles/search.css" media="all" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <script defer src="assets/scripts/autoComplete.js"></script>
+    <script defer src="assets/scripts/index.js"></script>
+</head>
+
+<body>
+<header>
+    <h1><i class="fas fa-ticket-alt"></i><a href="#">Tickets</a></h1>
+    <nav>
+        <ul>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Theatres</a></li>
+            <li><a href="#">My Account</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <div id="search-container">
+        <div class="movie-container">
+            <input id="movie-search-input" placeholder="Search movies ..." type="text">
+        </div>
+        <div class="location-container">
+            <input id="location-search-input" placeholder="Getting Location" type="text">
+        </div>
+        <input id="search" type="submit" value="Search">
+    </div>
+    <h2 class="outputH">Now Playing</h2>
+    <div class="movieRow" id="now-playing">
+    </div>
+
+    <h2 class="outputH">Coming Soon</h2>
+    <div class="movieRow" id="coming-soon">
+    </div>
+</div>
+</body>
+</html>

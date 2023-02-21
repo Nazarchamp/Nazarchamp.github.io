@@ -1,0 +1,119 @@
+@import "base.css";
+
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #121212;
+}
+
+.container{
+    flex: 1;
+    height: 100vh;
+}
+
+.container.left {
+    background: url("../images/background.jpg") no-repeat center center fixed;
+}
+.container.left .inner{
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+}
+
+.outputH{
+    display: none;
+}
+
+.login-container{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.login-container h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.login-container p {
+    color: #666;
+}
+
+.login-container label{
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+#floating-logo{
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    color: white;
+    font-size: 4rem;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input{
+    border-radius: 5px;
+    padding: 5px 5px 5px 10px;
+    height: 40px;
+    margin-bottom: 1rem;
+    background-color: #323232;
+    color:white;
+}
+
+input:focus{
+    background-color: #434343;
+}
+
+input[type="submit"]{
+    background: darkorange;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.checkbox-container *{
+    margin-bottom: 0!important;
+}
+
+input[type="checkbox"]{
+    margin-right: 0.25rem;
+    accent-color: darkorange;
+    border: #dddddd 1px solid;
+}
+
+input[type="checkbox"]:hover{
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background: rgba(255, 140, 0, 0.69);
+}
+
+p#error{
+    color: red;
+    visibility: hidden;
+    margin-bottom: 1rem;
+}

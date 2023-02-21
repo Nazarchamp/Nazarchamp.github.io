@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Nazar Viznytsya | Web Developer</title>
+    <link href="assets/styles/index.css" media="all" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <script defer src="assets/scripts/index.js"></script>
+</head>
+<body>
+<dialog class="modal" id="accept-modal">
+    <h2>Cookies</h2>
+    <p>We use cookies to improve your experience on our website. By clicking
+        <strong>Accept all</strong>, you agree to the use of cookies for
+        marketing and analytics purposes.</p>
+    <button id="accept-btn">Accept All</button>
+    <button id="manage-btn">Manage</button>
+</dialog>
+
+<dialog class="modal" id="manage-modal">
+    <h2>Manage Cookies</h2>
+    <div id="slider-container">
+        <div class="single-option-container"><p>Display Height</p>
+            <label class="switch">
+                <input checked type="checkbox" id="height-check">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="single-option-container"><p>Display Width</p>
+            <label class="switch">
+                <input checked type="checkbox" id="width-check">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="single-option-container"><p>Browser Name</p>
+            <label class="switch">
+                <input checked type="checkbox" id="browser-check">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="single-option-container"><p>OS Name</p>
+            <label class="switch">
+                <input checked type="checkbox" id="os-check">
+                <span class="slider round"></span>
+            </label></div>
+    </div>
+    <button id="close-manage">Save</button>
+</dialog>
+
+<main id="main">
+    <p>A <span id="cookie-open">cookie</span> is a small block of data created by a web server while a user is browsing
+        a website and placed on the
+        user's computer or other device by the user's web browser.</p>
+</main>
+</body>
+
+</html>

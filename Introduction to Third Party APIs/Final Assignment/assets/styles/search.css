@@ -1,0 +1,234 @@
+input{
+    background-color: #212121;
+    height:45px;
+    border-radius: 0 !important;
+    font-size: 1rem;
+}
+
+
+.location-container{
+    margin: 0 10px;
+    width: 40%;
+    max-width: 359px;
+}
+
+.movie-container{
+    width: 60%;
+    max-width: 539px;
+}
+
+input:focus{
+    background-color: #212121;
+}
+
+#movie-search-input{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#location-search-input{
+    width: 100%;
+    background: #212121 url("../images/pin.png") no-repeat 3% center;
+    background-size: 20px 20px;
+    color: #FFF;
+    padding-left: 40px;
+    margin-bottom: 0;
+}
+
+#search-container{
+    margin: 2rem auto;
+    width: 100%;
+    display:flex;
+}
+
+.container{
+    width: calc(100vw - 120px - 20px - 81px);
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    height: auto;
+}
+
+h1 i{
+    color: darkorange;
+    margin-top: 5px;
+    margin-right: 10px;
+    background-color: #212121;
+}
+
+/*------------------------------------------
+Header Navigation Styling
+-------------------------------------------*/
+
+header h1{
+    width: 400px;
+    margin-left: 60px;
+    line-height: 60px;
+}
+
+h1 a{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #212121;
+}
+
+header h1{
+    background-color: #212121;
+}
+
+.mobile-nav p{
+    line-height: 60px;
+    margin-top: 0;
+}
+
+.mobile-nav {
+    margin-right: 20px;
+}
+
+.mobile-nav p i {
+    line-height: 60px;
+    font-size: 20px;
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+header {
+    min-width: 100%;
+    background-color: #212121;
+
+    display:flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: block;
+    background-color: #212121;
+}
+
+nav, .bottom-hero-nav {
+    text-align: right;
+    height: 60px;
+    font-size: 100%;
+    overflow: hidden;
+    width: calc(70vw - 80px);
+}
+
+nav ul, .bottom-hero-nav ul {
+    float: none;
+    list-style: none;
+    font-size: 0;
+    margin-right: 60px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background-color: #212121;
+}
+
+
+nav ul li, .bottom-hero-nav ul li {
+    display: inline;
+    padding: 0 20px;
+    cursor: default;
+}
+
+nav ul li a, .bottom-hero-nav ul li a {
+    display: inline-block;
+    background-color: transparent;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .2px;
+    text-transform: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.bottom-hero-nav ul li a:hover, footer nav ul li a:hover{
+    color: #bbb;
+    transition: none;
+}
+
+nav ul li+li, .bottom-hero-nav ul li+li{
+    margin-left: 0;
+}
+
+
+/*------------------------------------------
+Auto Complete
+ */
+.autocomplete-items strong{
+    background-color: #212121;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+}
+
+.movie-container .autocomplete-items {
+    width: 60%;
+    max-width: 539px;
+}
+
+.location-container .autocomplete-items {
+    width: 40%;
+    max-width: 356.42px;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #212121;
+    color: #FFF;
+    border-top: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #323232;
+}
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: darkorange !important;
+    color: #ffffff;
+}
+
+/*------------------------------------------
+Movie Row
+ */
+h2{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.movieRow{
+    width: calc(100vw - 120px);
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 4rem;
+}
+
+.movie{
+    width: calc(100% / 6 - 150px / 6);
+    color: white;
+}
+
+.poster{
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.description{
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+}
