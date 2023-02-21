@@ -3,7 +3,7 @@ A repository containing all my technical projects from the vanilla HTML, CSS, JS
 - [Web Development Assignment 6](https://nazarchamp.github.io/Intro%20to%20Web%20Development/Assignment%206)
 - [Javascript Basics Assignment 2](https://nazarchamp.github.io/Javascript%20Basics/Assignment%202/index.html)
 - [Object Oriented JavaScript Final Project](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/OOP%20JS%20Final%20Assignment/index.html)
-- [Introduction To Third Party APIs Exercise 2 - Improvement of Object Oriented JavaScript Project 1](https://Nazarchamp.github.io/Introduction%20to%20Third%20Party%20APIs/Exercise%202,%20OOP%20JS%20Project%201%20Update/index.html)
+- [Introduction To Third Party APIs Exercise 2 - Improvement of Object Oriented JavaScript Project 1 (FYI: Music plays on load)](https://Nazarchamp.github.io/Introduction%20to%20Third%20Party%20APIs/Exercise%202,%20OOP%20JS%20Project%201%20Update/index.html)
 # All Projects
 ## Into to Web Development
 - [Web Development Assignment 3](https://nazarchamp.github.io/Intro%20to%20Web%20Development/Assignment%203)
@@ -24,7 +24,7 @@ A repository containing all my technical projects from the vanilla HTML, CSS, JS
 - [Object Oriented JavaScript Final Project](https://nazarchamp.github.io/Object%20Oriented%20JavaScript/OOP%20JS%20Final%20Assignment/index.html)
 ## Introduction To Third Party APIs
 Please note, Assignment 3 and the Final Assignment are not fully functional as they require personal API keys which have been removed for privacy
-- [Introduction To Third Party APIs Exercise 2 - Improvement of Object Oriented JavaScript Project 1](https://Nazarchamp.github.io/Introduction%20to%20Third%20Party%20APIs/Exercise%202,%20OOP%20JS%20Project%201%20Update/index.html)
+- [Introduction To Third Party APIs Exercise 2 - Improvement of Object Oriented JavaScript Project 1 (FYI: Music plays on load)](https://Nazarchamp.github.io/Introduction%20to%20Third%20Party%20APIs/Exercise%202,%20OOP%20JS%20Project%201%20Update/index.html)
 - [Introduction To Third Party APIs Assignment 1](https://Nazarchamp.github.io/Introduction%20to%20Third%20Party%20APIs/Assignment%201/index.html)
 - [Introduction To Third Party APIs Assignment 3](https://Nazarchamp.github.io/Introduction%20to%20Third%20Party%20APIs/Assignment%203/index.html)
 - [Introduction To Third Party APIs Final Assignment](https://Nazarchamp.github.io/Introduction%20to%20Third%20Party%20APIs/Final%20Assignment/index.html)
